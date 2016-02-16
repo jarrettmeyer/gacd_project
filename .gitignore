@@ -1,0 +1,4 @@
+.DS_Store
+
+# Do not send the upload.txt file to git. We do not want to encourage cheating!
+upload.txt
