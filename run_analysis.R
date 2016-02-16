@@ -40,7 +40,7 @@ get_data <- function (root_path, type) {
     # Get the activities for type.
     y <- get_table_data(folder_path, "y_", type)
     colnames(y) <- c("activity_id")
-    y <- merge(y, activity_labels, by.x = "activity_id", by.y = "id", sort = FALSE)
+    y <- inner_join(y, activity_labels, by = c("activity_id" = "id"))
 
     # Get the values for type.
     x <- get_table_data(folder_path, "X_", type)
