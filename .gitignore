@@ -1,4 +1,8 @@
-.DS_Store
-
 # Do not send the upload.txt file to git. We do not want to encourage cheating!
 upload.txt
+
+# Do not send the sample data to git.
+UCI\ HAR\ Dataset/
+
+# Always ignore the following junk.
+.DS_Store
